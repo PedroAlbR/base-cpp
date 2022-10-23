@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  clang:
+    build:
+      dockerfile: Dockerfile.clang
+    volumes:
+      - ./:/usr/app/
+    tty: true

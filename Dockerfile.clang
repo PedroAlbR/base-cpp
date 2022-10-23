@@ -1,0 +1,11 @@
+FROM ubuntu:latest
+
+RUN apt-get -y update && apt-get install -y
+
+RUN apt-get -y install clang make
+
+ARG BASE_DIR=/usr/app/
+
+WORKDIR $BASE_DIR
+
+RUN mkdir $BASE_DIR/build
